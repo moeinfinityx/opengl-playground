@@ -4,6 +4,14 @@ A basic reop contains all necessary libraries and configs to build a modern Open
 
 ## 克隆本项目/Clone this repository
 
+Github:
+
+```shell
+git clone https://github.com/moeinfinityx/opengl-playground.git --recursive
+```
+
+Gitlab:
+
 ```shell
 git clone https://git.sinomo.net/ix/opengl-playground.git --recursive
 ```
