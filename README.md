@@ -2,7 +2,21 @@
 
 A basic reop contains all necessary libraries and configs to build a modern OpenGL program.
 
-## 使用说明
+## 克隆本项目/Clone this repository
+
+```shell
+git clone https://git.sinomo.net/ix/opengl-playground.git --recursive
+```
+
+如果你已经克隆了本项目，但是忘记了`--recursive`选项：
+
+```shell
+cd opengl-playground
+git submodule init
+git submodule update --recursive
+```
+
+## 使用说明/How to use
 
 这是一个简单的OpenGL学习环境。
 
@@ -16,7 +30,15 @@ CMake下载地址：https://cmake.org/download/
 
 Linux和Mac OS可以使用包管理器来安装CMake。
 
-### 编译、运行
+```shell
+apt install cmake
+```
+
+```shell
+brew install cmake
+```
+
+### 编译、运行/Compile and run
 
 Linux、MSYS2:
 
@@ -54,8 +76,6 @@ cmake --build .
 add_subdirectory(demo2)
 ```
 
-
-
 ## 环境信息
 
 GLAD Options:
@@ -64,13 +84,22 @@ OpenGL: 3.2
 OpenGL ES1: 1.0
 OpenGL ES2: 3.2
 
+## Contribution
 
+如果你有任何的意见和建议，可以提交一个Issue，或者直接提交Pull Request。
+
+现在可能需要的改进：
+
+ - 改进CMake项目结构
+ - 添加更多的常用库，并只编译使用了的库
+ - 添加OpenGL版本选项
+ - 一键编译、运行脚本
+ - 更多示例
+ - 更多说明文档、注释
 
 ## LICENSE
 
 WTFPL
 
 <a <a href="http://www.wtfpl.net/"><img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png" width="80" height="15" alt="WTFPL" /></a>
-
-
 
