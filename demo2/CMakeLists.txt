@@ -6,7 +6,8 @@ find_package(OpenGL REQUIRED)
 INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_DIR})
 
 # FreeGLUT
-include_directories(${GLUT_INCLUDE_DIR})
+include_directories(../external/freeglut/include)
+
 # main
 file(GLOB SOURCE_FILES
     "*.h"
